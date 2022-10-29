@@ -27,8 +27,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 48px;
-  width: 150px;
+  height: 3rem;
+  width: 9.375rem;
   border-radius: 8px;
   font-weight: 700;
   text-decoration: none;
@@ -61,14 +61,14 @@ h6 {
 }
 
 h2 {
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 2rem;
+  line-height: 2.25rem;
 }
 
 p {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   text-align: center;
   color: var(--color-txt-secondary);
 }
@@ -103,8 +103,8 @@ header a {
 }
 
 .hero h1 {
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 3rem;
+  line-height: 3rem;
   margin-top: 0;
   margin-bottom: 32px;
 }
@@ -149,8 +149,8 @@ header a {
 }
 
 .kb-2-img {
-  height: 193px;
-  width: 129px;
+  height: 12.0625rem;
+  width: 8.0625rem;
   transform: translateX(-24px);
   border-radius: 0 20px 20px 0;
   background: var(--color-btn-primary) url(../assets/mobile/image-phone-and-keyboard.jpg) no-repeat top left/100% 100%;
@@ -158,8 +158,8 @@ header a {
 }
 
 .kb-3-img {
-  height: 193px;
-  width: 220px;
+  height: 12.0625rem;
+  width: 13.75rem;
   border-radius: 20px;
   background: url(../assets/mobile/image-glass-and-keyboard.jpg) no-repeat top left/100% 100%;
 }
@@ -195,8 +195,8 @@ main section picture {
 }
 
 main section h3 {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   margin-bottom: 24px;
 }
 
@@ -209,7 +209,7 @@ main section h3 {
   .release-date a:hover {
     background-color: var(--color-btn-primary-hover);
   }
-  
+
 }
 
 @media (min-width: 48em) {
@@ -229,9 +229,9 @@ main section h3 {
     padding: 0 40px;
   }
 
-  header a {
-    height: 58px;
-    width: 175px;
+  a {
+    height: 3.625rem;
+    width: 10.9375rem;
   }
 
   .hero {
@@ -295,12 +295,12 @@ main section h3 {
   .dual-kb .text h2 {
     margin: 0;
     padding: 0;
-    flex-basis: 200px;
+    flex-basis: 12.5rem;
   }
 
   .dual-kb .text p.pad {
     padding: 0;
-    flex-basis: 400px;
+    flex-basis: 25rem;
   }
 
   main {
@@ -351,13 +351,13 @@ main section h3 {
   }
 
   .hero h1 {
-    font-size: 56px;
-    line-height: 56px;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
     margin-bottom: 24px;
   }
 
   .hero p.pad {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .hero-text {
@@ -393,7 +393,7 @@ main section h3 {
 
   .dual-kb .text {
     display: block;
-    flex-basis: 255px;
+    flex-basis: 15.9375rem;
   }
 
   .dual-kb .text h2 {
@@ -408,7 +408,7 @@ main section h3 {
   }
 
   main>section {
-    flex-basis: 255px;
+    flex-basis: 15.9375rem;
   }
 
 }
@@ -419,7 +419,7 @@ main section h3 {
     max-width: 90rem;
     margin: 0 auto;
     background: url(../assets/shared/pattern-square.svg) no-repeat top 196px right -120px/255px 240px,
-      url(../assets/shared/pattern-square.svg) no-repeat bottom 677px left -120px/255px 240px;
+      url(../assets/shared/pattern-square.svg) no-repeat bottom 676px left -120px/255px 240px;
   }
 
 }
