@@ -1,30 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <title>Frontend Mentor | Typemaster pre-launch landing page</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
   <div class="wrapper">
-    <header>
+    <header class="pad">
       <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
         <title>Typemaster Logo</title>
         <g fill="none" fill-rule="evenodd">
-          <path fill="#F16718" d="M0 0h40v40H0z"/>
-          <path d="M10.342 17c.182 0 .288-.11.288-.299v-8.03c0-.078.046-.125.122-.125h2.443c.182 0 .288-.11.288-.299V6.3c0-.189-.106-.299-.288-.299H5.288C5.106 6 5 6.11 5 6.299v1.948c0 .189.106.299.288.299h2.368c.076 0 .121.047.121.125v8.03c0 .189.106.299.288.299h2.277zm6.57 0c.183 0 .29-.11.29-.299v-5.547c0-.125.09-.141.151-.047l.94 1.619a.37.37 0 00.35.204h1.062a.37.37 0 00.35-.204l.94-1.619c.06-.094.152-.078.152.047v5.547c0 .189.106.299.288.299h2.277c.182 0 .288-.11.288-.299V6.3C24 6.11 23.894 6 23.712 6H21.45a.37.37 0 00-.349.204L19.265 9.3c-.045.094-.136.094-.182 0l-1.836-3.096a.37.37 0 00-.35-.204h-2.26c-.183 0-.289.11-.289.299V16.7c0 .189.106.299.289.299h2.276z" fill="#FFF" fill-rule="nonzero"/>
+          <path fill="#F16718" d="M0 0h40v40H0z" />
+          <path
+            d="M10.342 17c.182 0 .288-.11.288-.299v-8.03c0-.078.046-.125.122-.125h2.443c.182 0 .288-.11.288-.299V6.3c0-.189-.106-.299-.288-.299H5.288C5.106 6 5 6.11 5 6.299v1.948c0 .189.106.299.288.299h2.368c.076 0 .121.047.121.125v8.03c0 .189.106.299.288.299h2.277zm6.57 0c.183 0 .29-.11.29-.299v-5.547c0-.125.09-.141.151-.047l.94 1.619a.37.37 0 00.35.204h1.062a.37.37 0 00.35-.204l.94-1.619c.06-.094.152-.078.152.047v5.547c0 .189.106.299.288.299h2.277c.182 0 .288-.11.288-.299V6.3C24 6.11 23.894 6 23.712 6H21.45a.37.37 0 00-.349.204L19.265 9.3c-.045.094-.136.094-.182 0l-1.836-3.096a.37.37 0 00-.35-.204h-2.26c-.183 0-.289.11-.289.299V16.7c0 .189.106.299.289.299h2.276z"
+            fill="#FFF" fill-rule="nonzero" />
         </g>
       </svg>
-      <a href="#top">pre-order now</a>
+      <a href="#top">Pre-order now</a>
     </header>
+    <section class="hero">
+      <div class="hero-text">
+        <h1 class="pad">Typemaster keyboard</h1>
+        <p class="pad">Improve your productivity and gaming without breaking the bank. Upgrade to a high quality
+          mechanical typing experience.</p>
+        <div class="release-date pad">
+          <a href="#top">Pre-order now</a>
+          <p>Release on 5/27</p>
+        </div>
+      </div>
+      <div class="kb-1-img"></div>
+    </section>
+    <section class="dual-kb">
+      <div class="kb-2-img"></div>
+      <div class="kb-3-img"></div>
+      <div class="text">
+        <h2>Mechanical<br>wireless<br>keyboard</h2>
+        <p class="pad">The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety
+          of switches and keycaps, along with reliable wireless connectivity.</p>
+      </div>
+    </section>
+    <main class="pad">
+      <section>
+        <picture>
+          <img src="./assets/shared/icon-compatible.svg" alt="monitor">
+        </picture>
+        <h3>Highly<br>compatible</h3>
+        <p>Easy to use and works well with all major computer brands, gaming consoles and mobile devices.
+          Plug & play, no installation or driver needed.</p>
+      </section>
+      <section>
+        <picture>
+          <img src="./assets/shared/icon-bluetooth.svg" alt="bluetooth">
+        </picture>
+        <h3>Wireless<br>with bluetooth</h3>
+        <p>Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away.
+          Simply plug the unifying receiver into your computer.</p>
+      </section>
+      <section>
+        <picture>
+          <img src="./assets/shared/icon-battery.svg" alt="battery">
+        </picture>
+        <h3>High capacity<br>battery</h3>
+        <p>Equipped with a long-lasting built-in battery, you'll never have to spend a dime on replaceable ones.
+          Enjoy 40 hours of usage time between charges.</p>
+      </section>
+      <section>
+        <picture>
+          <img src="./assets/shared/icon-light.svg" alt="lightbulb">
+        </picture>
+        <h3>RGB backlit<br>modes</h3>
+        <p>Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the
+          dark and helps
+          you type in low light conditions.</p>
+      </section>
+    </main>
+    <footer>
+      <p><strong>Typemaster 2021</strong> &nbsp;&vert;&nbsp; All Rights Reserved</p>
+    </footer>
   </div>
-  
+
 </body>
+
 </html>

@@ -1,5 +1,11 @@
 :root {
   --font-primary: 'Barlow', sans-serif;
+  --color-btn-primary: hsl(21.8, 88.6%, 52%);
+  --color-btn-primary-hover: hsl(21.8, 100%, 69.2%);
+  --color-btn-secondary: hsl(198, 27.8%, 92.9%);
+  --color-txt-primary: hsl(219.5, 50%, 17.3%);
+  --color-txt-secondary: hsl(220.8, 23.4%, 58%);
+  --color-txt-white: hsl(0, 0%, 100%);
 }
 
 * {
@@ -8,15 +14,25 @@
   padding: 0;
 }
 
-input, select, textarea, button {
+input,
+select,
+textarea,
+button {
   border: none;
   box-shadow: none;
   outline: none;
 }
 
 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 150px;
+  border-radius: 8px;
   font-weight: 700;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 a:link,
@@ -26,8 +42,33 @@ a:active {
   color: inherit;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--color-txt-primary);
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--color-txt-secondary);
 }
 
 body {
@@ -35,5 +76,240 @@ body {
 }
 
 .wrapper {
-  padding: 24px 24px 50px;
+  padding: 23px 0 50px 0;
+}
+
+.pad {
+  padding: 0 24px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+  color: var(--color-txt-primary);
+}
+
+header a {
+  background-color: var(--color-btn-secondary);
+}
+
+.hero {
+  margin-bottom: 24px;
+  overflow-x: hidden;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 48px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.hero>p {
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.release-date {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+
+.release-date a {
+  margin-right: 32px;
+  background-color: var(--color-btn-primary);
+  color: var(--color-txt-white);
+}
+
+.release-date p {
+  font-weight: 700;
+}
+
+.kb-1-img {
+  height: 331px;
+  width: 372px;
+  transform: translateX(24px);
+  margin-left: auto;
+  border-radius: 20px 0 0 20px;
+  background: url(../assets/mobile/image-keyboard.jpg) no-repeat top left/100% 100%;
+}
+
+.dual-kb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 111px;
+}
+
+.kb-2-img {
+  height: 193px;
+  width: 129px;
+  transform: translateX(-24px);
+  border-radius: 0 20px 20px 0;
+  background: var(--color-btn-primary) url(../assets/mobile/image-phone-and-keyboard.jpg) no-repeat top left/100% 100%;
+  background-blend-mode: multiply;
+}
+
+.kb-3-img {
+  height: 193px;
+  width: 220px;
+  border-radius: 20px;
+  background: url(../assets/mobile/image-glass-and-keyboard.jpg) no-repeat top left/100% 100%;
+}
+
+.dual-kb .text {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.dual-kb .text h2 {
+  margin-top: 75px;
+  margin-bottom: 24px;
+}
+
+main {
+  margin-bottom: 96px;
+  text-align: center;
+}
+
+main section+section {
+  margin-top: 64px;
+}
+
+main section picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 48px auto;
+  border-radius: 16px;
+  background-color: var(--color-btn-primary);
+}
+
+main section h3 {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 48em) {
+
+  h1,
+  h2,
+  h3,
+  p {
+    text-align: left;
+  }
+
+  .wrapper {
+    padding: 40px 0 43px 0;
+  }
+
+  .pad {
+    padding: 0 40px;
+  }
+
+  header a {
+    height: 58px;
+    width: 175px;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .hero-text {
+    flex-basis: 75%;
+  }
+
+  .hero-text>.pad {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .release-date {
+    margin-top: 39px;
+    margin-bottom: 0;
+  }
+
+  .kb-1-img {
+    height: 425px;
+    width: 478px;
+    flex-grow: 1;
+    transform: translateX(0);
+    background: url(../assets/tablet/image-keyboard.jpg) no-repeat top left/cover;
+  }
+
+  .dual-kb {
+    justify-content: space-between;
+    margin-bottom: 72px;
+    padding: 0 40px;
+  }
+
+  .kb-2-img {
+    height: 320px;
+    width: 214px;
+    transform: translateX(0);
+    border-radius: 20px;
+    background: var(--color-btn-primary) url(../assets/tablet/image-phone-and-keyboard.jpg) no-repeat top left/100% 100%;
+    background-blend-mode: multiply;
+  }
+
+  .kb-3-img {
+    height: 320px;
+    width: 445px;
+    background: url(../assets/tablet/image-glass-and-keyboard.jpg) no-repeat top left/100% 100%;
+  }
+
+  .dual-kb .text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 72px;
+  }
+
+  .dual-kb .text h2 {
+    margin: 0;
+    padding: 0;
+    flex-basis: 200px;
+  }
+
+  .dual-kb .text p.pad {
+    padding: 0;
+    flex-basis: 400px;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 142px;
+    row-gap: 72px;
+    column-gap: 69px;
+  }
+
+  main>section {
+    flex-basis: 42%;
+  }
+
+  main section+section {
+    margin-top: 0;
+  }
+
+  main section picture {
+    margin: 0 0 40px 0;
+  }
+
+  footer p {
+    text-align: center;
+  }
+
 }
